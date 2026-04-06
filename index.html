@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DevOps Task Manager</title>
+</head>
+<body>
+  <h1>Task Manager</h1>
+  <input type="text" id="taskInput" placeholder="Enter task">
+  <button onclick="addTask()">Add Task</button>
+  <ul id="taskList"></ul>
+
+  <script>
+    function addTask() {
+      let task = document.getElementById("taskInput").value;
+      let li = document.createElement("li");
+      li.innerText = task;
+      document.getElementById("taskList").appendChild(li);
+    }
+  </script>
+</body>
+</html>
